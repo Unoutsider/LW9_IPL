@@ -1,0 +1,13 @@
+<h1>Результат</h1>
+
+<% if @result %>
+<p id="result"><%= @result %></p>
+<% else %>
+<table class="table">
+<thead><tr><th>Наименование</th><th>Результат</th></tr></thead>
+<tbody><tr><td>Исходная цепочка:</td><td id="result1"><%= @result1 %></td></tr>
+<tr><td>Подпоследовательности чисел:</td><td id="result2"><%= @result2 %></td></tr>
+<tr><td>Самая длинная подпоследовательность:</td><td id="result3"><%= @result3 %></td></tr></tbody>
+</table>
+<%end%>
+<%= link_to "Повторить вычисления", :root %>
